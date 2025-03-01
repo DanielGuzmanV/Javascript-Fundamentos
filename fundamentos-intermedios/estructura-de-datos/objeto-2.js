@@ -2,7 +2,7 @@ const lista = {
     Nombre: "Marcelo",
     Edad: 21,
     isDeveloper: true,
-    Date: ["26, 12, 2010"],
+    Date: ["Fecha Nacimiento: ", "26, 12, 2010"],
     Bookfav: {
         titulo: "La divina comedia",
         autor: "Dante alighieri",

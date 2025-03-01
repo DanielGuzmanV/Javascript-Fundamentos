@@ -1,3 +1,26 @@
+
+// Declaramos algunas variables para compararlas:
+let number1 = 10;
+let number2 = 5;
+let numberString = '10';
+
+// Comparadores relacionales:
+console.log(number1, " > ", number2, (number1 > number2));
+console.log(number1, " >= ", number2, (number1 >= number2));
+console.log(number1, " > ", number1, (number1 > number1));
+console.log(number1, " < ", number1, (number1 < number1));
+console.log(number1, " <= ", number1, (number1 <= number1));
+console.log("---------------------------------------------");
+
+// Operadores de igualdad:
+console.log(number1, " == ", number1, (number1 == number1));
+console.log(number1, " != ", number1, (number1 != number1));
+console.log(number1, " == ", numberString, (number1 == numberString));
+console.log(number1, " === ", numberString, (number1 === numberString));
+console.log(number1, " !== ", numberString, (number1 !== numberString));
+
+console.log("---------------------------------------------");
+
 //  Comparaciones:
 //  Igualdad:
 var numberOne = 5;
