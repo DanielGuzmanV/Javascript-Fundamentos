@@ -108,4 +108,56 @@ console.log("---------------------------------------------");
 // Eliminar una propiedad de un objeto:
 delete personaje.origin;
 console.log(personaje);
+console.log("---------------------------------------------");
+
+// Creamos otro ejemplo:
+const point = {
+    x: 10,
+    y: 15,
+    dibujar() {
+        console.log('Dibujando... El dibujo fue dibujado');
+    },
+    newDibujo() {
+        console.log('Realizando nuevo dibujo...');
+    }
+}
+
+// Tambien podemos accder a la funcion del objeto con un "if"
+if('dibujar' in point) {
+    point.dibujar();
+}
+
+if('newDibujo' in point) {
+    point.newDibujo();
+}
+console.log("---------------------------------------------");
+
+// Con esta funcion podemos ver las propiedades de nuestro objeto en un array
+// hay de dos formas:
+let keys = Object.keys(point);
+console.log(keys);
+console.log(Object.keys(point));
+console.log("---------------------------------------------");
+
+// Otro metodo para mostrar todas las propiedades es con el "for"
+for(let llave of Object.keys(point)) {
+    console.log(llave, point[llave]);
+}
+console.log("---------------------------------------------");
+
+// Este es similar, solo que en este nos muestra los datos de las propiedades en una array
+for(let entrada of Object.entries(point)) {
+    console.log(entrada);
+}
+console.log("---------------------------------------------");
+
+// Una manera moderna seria la siguiente:
+for(let clave in point) {
+    console.log(clave, point[clave]);
+}
+
+
+
+
+
 

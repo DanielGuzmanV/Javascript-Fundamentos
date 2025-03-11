@@ -34,5 +34,6 @@ function sumaValores(number1, number2) {
 // Solo se sumara los 2 primeros valores, los demas no los tomara en cuenta
 let resultado = sumaValores(7,2,5,4,3);
 console.log(resultado);
+console.log("--------------------------------------------");
 
 
