@@ -29,10 +29,12 @@ user.editar = funcionEditar
 function funcionEditar() {
     console.log('Editando datos de:',user.name);
 }
+console.log('Agregamos funciones al objeto:')
 console.log(user);
 console.log('----------------------------------');
 
 // Tambien podremos acceder a esos valores de las funciones
+console.log('Accedemos a los datos de la funcion')
 console.log(user.guardar());
 console.log(user.editar());
 console.log('----------------------------------');
@@ -42,16 +44,20 @@ user.id = 1002;
 user.name = 'Marco'
 user.apellido = 'Salvatierra';
 user.edad = 32;
+console.log('Modificando valores...')
 console.log(user);
 console.log('----------------------------------');
 
 // Tambien podremos eliminar algunas propiedades:
+console.log('Se eliminaron 2 propiedades:')
 delete user.edad;
 delete user.editar;
 console.log(user);
 console.log('----------------------------------');
 
-// Ahora si queremos que nuestro objeto constante no sea modificado usamos "Freeze"
+// --------------------------------------------------------------------------------
+// Ahora si queremos que nuestro objeto constante no sea modificado
+// como agregar nuevas propiedades o cambiar su valor, usamos "Freeze"
 const nuevoUsuario = Object.freeze({
     id: 2001,
     nombre: 'Pedro',
@@ -76,18 +82,22 @@ const newUser = Object.seal({
     id: 3001,
     name: 'Steve',
 })
+console.log('Nuevo objeto original:')
 console.log(newUser);
 console.log('----------------------------------');
 
 // Intentamos agregar mas propiedades:
 newUser.lastname = 'Miller';
 newUser.age = 62;
+
+console.log('Intentamos agregar nuevas propiedades:')
 console.log(newUser);
 console.log('----------------------------------');
 
 // Solo podremos modificar los valores de la propiedad:
 newUser.id = 3002;
 newUser.name = 'Carlos';
+console.log('Modificamos sus valores')
 console.log(newUser);
 
 
