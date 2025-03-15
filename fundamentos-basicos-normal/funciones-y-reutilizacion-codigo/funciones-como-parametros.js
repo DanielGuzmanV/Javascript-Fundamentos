@@ -12,11 +12,3 @@ let resultado = operacion(10, 2, dividir);
 console.log('El resultado es: ', resultado);
 console.log('--------------------------------------');
 
-// Podemos usar casi cualquier funcion:
-function sumar(value1, value2) {
-    return value1 + value2;
-}
-
-// Llamamos a la operacion:
-let newResult = operacion(20, 43, sumar);
-console.log('Resultado de suma:', newResult);
