@@ -3,8 +3,8 @@ module.exports.multiplicar = (value1, value2) => value1 * value2;
 
 // ------------------------------------------
 // Usamos funciones externas:
-module.exports.funcionesExterna1 = saludar;
-module.exports.funcionesExterna2 = sumarElementos();
+module.exports.funcionSaludo = saludar;
+module.exports.funcionSuma = sumarElementos();
 
 
 function sumarElementos() {
