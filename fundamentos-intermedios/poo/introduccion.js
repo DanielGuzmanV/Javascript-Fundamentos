@@ -26,7 +26,10 @@ class DatosPersona {
 // 2. Objetos: Son instancias de una clase (una copia con valores propios)
 // estos se crean usando "new"
 
-// Ejemplo: de una instancia:
+// Ejemplo:
+// "new DatosPersona('John', 'Deacon', 30);" es la creacion de una instancia
+// y "const primeraPersona" es la instancia, pero tambien es el objeto
+// Este objeto puede crear nuevas propiedades y acceder a los metodos:
 const primeraPersona = new DatosPersona('John', 'Deacon', 30);
 
 // Usamos el metodo:
