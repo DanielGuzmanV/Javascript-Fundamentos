@@ -29,6 +29,12 @@ class DatosPersona {
 // Ejemplo: de una instancia:
 const primeraPersona = new DatosPersona('John', 'Deacon', 30);
 primeraPersona.metodoSaludar();
+
+// Acceder directamente a una propiedad:
+console.log(primeraPersona.varNombre);
+console.log(primeraPersona.varApellido);
+console.log(primeraPersona.varEdad);
+
 console.log('----------------------------------------------');
 
 // 1. Agregando mas propiedades dentro del constructor:
