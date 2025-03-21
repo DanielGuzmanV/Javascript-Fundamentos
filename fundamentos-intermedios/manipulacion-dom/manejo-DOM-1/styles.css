@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: bisque; */
+    text-align: center;
+    margin-top: 50px;
+    transition: backgroun-color 0.5s;
+}
+
+button {
+    padding: 10px, 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+h2 {
+    /* color: blue; */
+    transition: opacity 0.3s ;
+}

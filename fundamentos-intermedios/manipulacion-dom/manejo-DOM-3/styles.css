@@ -1,0 +1,36 @@
+body {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.caja {
+    width: 200px;
+    height: 200px;
+    
+    background-color: lightgreen;
+    text-align: center;
+    font-size: 20px;
+    
+    /* Hacemos que el la caja este centrada */
+    margin: auto;
+
+    /* Agregamos espacio entre el div y el button */
+    margin-bottom: 20px;
+
+    /* Evitamos seleccionar todo el div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.resaltado {
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+    font-size: 50px;
+}
