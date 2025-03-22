@@ -1,0 +1,26 @@
+body {
+    background-color: blanchedalmond;
+    text-align: center;
+}
+button {
+    cursor: pointer;
+}
+#divElementos{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px;
+}
+
+#titulo {
+    color: red;
+}
+
+#subtitulo {
+    color: blue;
+}
+
+.fondoDiv {
+    background-color: lightgreen;
+    color: red;
+    font-weight: bold;
+}
