@@ -1,0 +1,13 @@
+body {
+    background-color: azure;
+    text-align: center;
+}
+
+#titulo {
+    color: red;
+}
+
+div {
+    margin: 25px;
+    border: 2px solid blue;
+}
