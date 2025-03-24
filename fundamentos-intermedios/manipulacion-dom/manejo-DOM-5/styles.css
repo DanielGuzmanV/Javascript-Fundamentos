@@ -1,0 +1,46 @@
+body {
+    background-color: powderblue;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+h2{
+    color: red;
+}
+
+hr {
+    height: 2px;
+    color: black;
+    background-color: black;
+}
+
+img{
+    display: block;
+    margin: auto;
+
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+
+    cursor: pointer;
+}
+
+/* ------------------------------------------------ */
+.claseOriginalDiv{
+    background-color:darksalmon;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 10px;
+}
+.claseNuevaDiv{
+    background-color: orange;
+    font-weight: bold;
+    padding: 30px;
+    border: 2px solid blue;
+    margin: 30px;
+}
+
+input {
+    margin: 20px;
+}
+
