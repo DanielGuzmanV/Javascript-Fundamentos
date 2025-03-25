@@ -38,4 +38,47 @@ switch (accionString) {
         break;
 }
 
+// Usamos un switch para las fechas:
+
+const fechaActual = new Date();
+console.log(fechaActual); // Mostrara la fecha actual:
+
+let varDia = fechaActual.getDay();
+// let varDia = 0;
+let diaSemana = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
+
+
+switch(varDia) {
+    case 0:
+    console.log(diaSemana[0]);
+    break;
+    
+    case 1:
+    console.log(diaSemana[1]);
+    break
+        
+    case 2:
+    console.log(diaSemana[2]);
+    break
+            
+    case 3:
+    console.log(diaSemana[3]);
+    break
+    
+    case 4:
+    console.log(diaSemana[4]);
+    break
+        
+    case 5:
+    console.log(diaSemana[5]);
+    break
+    
+    case 6:
+    console.log(diaSemana[6]);
+    break
+
+    default:
+        console.log('Sin datos...');
+        break
+}
 

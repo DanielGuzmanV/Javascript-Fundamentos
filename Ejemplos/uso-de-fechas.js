@@ -45,8 +45,11 @@ console.log(fecha_cadena);
 const fecha_valores = new Date(2017, 9, 23);
 console.log(fecha_valores);
 
-const dia = ahora.getDate();
-const mes = ahora.getMonth() + 1;
-const anyo = ahora.getFullYear();
+let dia = ahora.getDate();
+let mes = ahora.getMonth() + 1;
+let anyo = ahora.getFullYear();
 
-console.log(dia, mes, anyo);
+// console.log(dia, mes, anyo);
+console.log("El dia es:", dia);
+console.log("El mes es:", mes);
+console.log("El año es:", anyo);

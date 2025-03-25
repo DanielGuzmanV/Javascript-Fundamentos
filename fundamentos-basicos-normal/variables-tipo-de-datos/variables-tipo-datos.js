@@ -39,7 +39,31 @@ let var_Ejemplo = "Hello"
 console.log("Variable sin cambio " + var_Ejemplo);
 var_Ejemplo = 23;
 console.log("Variable con cambio " + var_Ejemplo);
+console.log("-----------------------------------------------------");
 
+// Uso del string
+// Concatenacion de string:
+let miNombre = "Manuel";
+let saludo = "Hola, " + miNombre;
+console.log(saludo);
+
+// Podremos ver la longitud de ese string:
+console.log("La longitud es: ", saludo.length);
+
+// Tambien podremos acceder a los caracteres:
+console.log("El primer caracter es:", saludo[0]);
+console.log("El ultimo caracter es:", saludo[11]);
+
+// Metodos comunes de String:
+console.log(saludo.toUpperCase()); // Convierte todo a mayuscula
+console.log(saludo.toLowerCase()); // Conviert todo en minuscula
+console.log(saludo.indexOf('Hola')); // Busca en que posicion esta "Hola"
+console.log(saludo.indexOf('Manuel')); // Busca en que posicion esta "Manuel"
+console.log(saludo.indexOf('Mundo')); // Como la palabra no existe da -1
+console.log(saludo.slice(0, 10)); // Nos deja con las palabras del "0 al 10"
+console.log(saludo.replace("Manuel", "Antonio")); // Reemplazamos el nombre "Manuel"  por "Antonio"
+
+// ==================================================================
 //tipos de datos primitivos:
 let Number = 23;
 let String = "Hello world";

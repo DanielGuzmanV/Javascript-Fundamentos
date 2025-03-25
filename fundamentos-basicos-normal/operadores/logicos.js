@@ -12,6 +12,12 @@ console.log("Operador And", valorBool1 && valorBool2);
 console.log("Operador And", valorBool1 && valorBool1);
 console.log("Operador And", valorBool2 && valorBool2);
 console.log("Operador And", valorBool2 && valorBool1);
+console.log('---------------------------------------------');
+
+console.log("Ejemplos del operador and(&&)")
+console.log(5 > 10 && 15 > 20) // Si todo es false, sera false
+console.log(5 < 10 && 15 < 20) // si todo es true, sera true
+console.log(5 < 10 && 15 > 20) // Si al menos uno es true y el otro false, no se cumple la expresion, sera false
 
 console.log('---------------------------------------------');
 
@@ -23,6 +29,18 @@ console.log("Operador OR", valorBool1 || valorBool2);
 console.log("Operador OR", valorBool1 || valorBool1);
 console.log("Operador OR", valorBool2 || valorBool2);
 console.log("Operador OR", valorBool2 || valorBool1);
+console.log('---------------------------------------------');
+
+console.log("Ejemplos del operador and(&&)")
+console.log(5 > 10 || 15 > 20) // Si todo es false, sera false
+console.log(5 < 10 || 15 < 20) // si todo es true, sera true
+console.log(5 < 10 || 15 > 20) // Si al menos uno es true y el otro false, se cumple una expresion, entonces sera tru
+
+console.log('---------------------------------------------');
+
+console.log("Usamos los dos operadores");
+console.log(5 > 10 && 15 > 20 || 30 < 40);
+console.log(5 > 10 || 15 > 20 && 30 < 40);
 
 console.log('---------------------------------------------');
 
@@ -31,6 +49,12 @@ console.log("Operador NOT", !valorBool1);
 console.log("Operador NOT", !valorBool2);
 console.log("Operador NOT", !!valorBool1);
 console.log("Operador NOT", !!valorBool2);
+console.log('---------------------------------------------');
+
+console.log("Ejemplo del operador not (!)")
+console.log(!(5 > 10 || 15 > 20)) // El resultado era false, ahora sera true
+console.log(!(5 < 10 || 15 < 20)) // El resultado era true, ahora sera false
+
 
 console.log('---------------------------------------------');
 

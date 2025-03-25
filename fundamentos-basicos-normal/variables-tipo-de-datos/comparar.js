@@ -4,7 +4,7 @@ let number1 = 10;
 let number2 = 5;
 let numberString = '10';
 
-// Comparadores relacionales:
+console.log("Comparadores relacionales:");
 console.log(number1, " > ", number2, (number1 > number2));
 console.log(number1, " >= ", number2, (number1 >= number2));
 console.log(number1, " > ", number1, (number1 > number1));
@@ -12,89 +12,35 @@ console.log(number1, " < ", number1, (number1 < number1));
 console.log(number1, " <= ", number1, (number1 <= number1));
 console.log("---------------------------------------------");
 
-// Operadores de igualdad:
+console.log("Operadores de igualdad:");
 console.log(number1, " == ", number1, (number1 == number1));
 console.log(number1, " != ", number1, (number1 != number1));
-console.log(number1, " == ", numberString, (number1 == numberString));
-console.log(number1, " === ", numberString, (number1 === numberString));
+console.log(number1, " == ", numberString, (number1 == numberString)); // Igualdad por valor
+console.log(number1, " === ", numberString, (number1 === numberString)); // Igualdad por identidad(por tipo y valor)
 console.log(number1, " !== ", numberString, (number1 !== numberString));
 
 console.log("---------------------------------------------");
 
-//  Comparaciones:
-//  Igualdad:
-var numberOne = 5;
-var numberTwo = 5;
-
-if (numberOne == numberTwo) {
-    console.log("5 es igual a 5");
-}
-
-if ( numberOne === numberTwo) {
-    console.log("5 es muy igual a 5");
-}
-console.log("---------------------------------------------");
-
 let varNumber = 5;
-console.log(typeof varNumber)
 let varString = "5";
-console.log(typeof varString)
+
+console.log("verificamos el tipo de dato:")
+console.log(`${varNumber} es de tipo: ${typeof varNumber}`)
+console.log(`${varString} es de tipo: ${typeof varString}`);
+
+console.log("---------------------------------------------");
 
 // == El doble signo solo compara el valor
 // === El triple signo compara el valor y el tipo
+console.log("Comparacion y igualdad del tipo y dato:")
 
-if (varNumber == varString) {
-    console.log("a es igual a b - debil");
-}
+console.log(varNumber, '==', varNumber, 'en valor ?', (varNumber == varNumber));
+console.log(varNumber,'===',varNumber,'en tipo y dato ?', (varNumber === varNumber));
+console.log(varNumber, '==', varString, 'en valor ?', (varNumber == varString));
+console.log(varNumber, '===', varString, 'en tipo y dato ?', (varNumber === varString));
+console.log(varNumber, '!=', varString, 'en valor ?', (varNumber != varString));
+console.log(varNumber, '!==', varString, 'en tipo y dato ?', (varNumber !== varString));
 
-if (varNumber === varString) {
-    console.log("a es igual a b - fuerte");
-}
-console.log("---------------------------------------------");
-
-//  Desigualdade basica (los que no son iguales)
-let numberA = 4;
-let numberB = 10;
-
-if (numberA != numberB) {
-    console.log("numberA es diferente a numberB - Debil");
-}
-
-if (numberA !== numberB) {
-    console.log("numberA es diferente a numberB - Fuerte");
-}
-
-console.log("---------------------------------------------");
-
-//  Valores iguales, con signos de desigualdad
-let c2 = 4;
-let d2 = 4;
-
-if (c2 != d2) {
-    console.log("C2 es diferente a d2 - Debil");
-} else {
-    console.log("Son iguales");
-}
-
-if (c2 !== d2) {
-    console.log("C2 es diferente a d2 - Fuerte");
-} else {
-    console.log("Son iguales");
-}
-//No se ejecutaran, por diferencia de valores 
-console.log("---------------------------------------------");
-
-//Valores iguales pero con un String 
-let c3 = 4;
-let d3 = "4";
-
-if (c3!= d3) {
-    console.log("C3 es diferente a d3 - Debil");
-}
-
-if (c3 !== d3) {
-    console.log("C3 es diferente a d3 - Fuerte");
-}
 console.log("---------------------------------------------");
 
 //Comparaciones de desigualdades de mayores y menores
@@ -128,10 +74,3 @@ if (b4 <= 5 ) {
 } 
 //aqui indica que B no es mayor a 5 si que son iguales; y aun asi se ejecuta la consola
 console.log("---------------------------------------------");
-
-const z = "59";
-const y = "23";
-
-if (y <= z ) {
-    console.log("z es mayor que y")
-}
