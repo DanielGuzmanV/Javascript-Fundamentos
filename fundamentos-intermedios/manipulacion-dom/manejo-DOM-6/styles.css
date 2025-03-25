@@ -1,0 +1,45 @@
+body {
+    background-color: bisque;
+    text-align: center;
+}
+
+h1 {
+    color: red;
+}
+h2 {
+    color: blue;
+}
+
+hr {
+    height: 2px;
+    background-color: black;
+}
+
+
+#lista {
+    cursor: pointer;
+}
+
+#divContenedor {
+    margin: 20px;
+}
+
+.btn {
+    margin: 10px;
+}
+
+.space {
+    margin: 10px;
+}
+
+.agregarStl {
+    color: white;
+    margin: 10px;
+    background-color: chocolate;
+}
+
+
+.classButtons{
+    background-color: aquamarine;
+    margin: 15px;
+}
