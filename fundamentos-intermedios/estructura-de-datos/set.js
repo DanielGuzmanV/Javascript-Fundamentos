@@ -1,6 +1,28 @@
 // Es una coleccion de valores unicos (sin duplicados)
 // Tenemos algunos metodos utiles: .add(), .has(), .delete(), .size.
 
+// Creamos un set:
+let newValueSet = new Set()
+console.log(newValueSet);
+
+// Inicializamos:
+newValueSet = new Set(["Marco", "Polo", "Alberto", 23, true, "corredeprueba.gmail.com"]);
+console.log(newValueSet);
+
+// Vemos el tamaño del set:
+console.log("El tamaño del set es:", newValueSet.size);
+console.log('-------------------------------------');
+
+// Convertir un set a array:
+let nuevoArray = Array.from(newValueSet)
+console.log('Set a Array:', nuevoArray);
+console.log('-------------------------------------');
+
+// Convertir un array a set:
+newValueSet = new Set(nuevoArray);
+console.log('Array a Set:',newValueSet);
+console.log('-------------------------------------');
+
 // Ejemplo sin valores repetidos:
 let conjunto1 = new Set([1,2,3,4,5]);
 console.log(conjunto1);
@@ -17,6 +39,8 @@ let listaNumeros = [1,2,2,3,3,4,4,5,6,6];
 
 // Usamos set para eliminar los repetidos
 let listaUnica = new Set(listaNumeros);
+
+// Usamos el operador "spread(...)" para volverlo en array
 console.log([...listaUnica]);
 console.log('-------------------------------------');
 
