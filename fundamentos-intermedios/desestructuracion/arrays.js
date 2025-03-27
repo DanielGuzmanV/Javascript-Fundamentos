@@ -33,6 +33,17 @@ console.log(number3);
 console.log(number5);
 console.log("------------------------------------------------");
 
+// Podremos agregar valores por defecto: 
+// Por ejemplo: si agregamos un "num5", que no existe en la lista
+// saldra undefined, pero le agregamos un valor por defecto:
+let newArrayNumbers = [1,2,3,4];
+let [num1 = 0, num2 = 0, num3 = 0, num4 = 0, num5 = 0] = newArrayNumbers;
+console.log(num1, num2, num3, num4, num5);
+// Podriamos agregar a cualquiera un valor por defecto, asi evitamos errores
+
+
+console.log("------------------------------------------------");
+
 // Desestructuracion anidad:
 // Cuando hay un array dentro de otro array
 const arrayDeArray = [12, 23, 52, [2,4,6,8,10], 73, 98];

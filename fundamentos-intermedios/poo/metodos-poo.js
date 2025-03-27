@@ -118,3 +118,44 @@ datosPersona2.setEstado('Divorciado');
 // Vemos nuevamente el metodo de "informacion de usuario"
 datosPersona2.informacionUsuario();
 
+// Ejemplos del los metodos get y set:
+class UsoMetodos4 {
+
+    #propUsuario;
+    #propEdad;
+    #propOcupacion;
+    #propPassword;
+
+    constructor(nombre, edad, ocupacion, password) {
+        this.#propUsuario = nombre;
+        this.#propEdad = edad;
+        this.#propOcupacion = ocupacion;
+        this.#propPassword = password;
+    }
+
+    // Acceder al valor pero no modificamos, 
+    // osea leemos el nombre pero no sobreescribimos
+    get retornarNombre() {
+        return `Hola soy, ${this.#propUsuario}`;
+    }
+
+    // Modificamos el valor pero no accedemos
+    set cambiarPassword(newPassword) {
+        this.#propPassword = newPassword;
+    }
+
+    // Agregamos un get para ver si password cambio
+    get password() {
+        return this.#propPassword;
+    }
+}
+
+let newDatePerson = new UsoMetodos4("Manuel", 43, "Profesor", "CT1234567");
+console.log(newDatePerson);
+console.log(newDatePerson.retornarNombre);
+
+// Verificamos los cambios:
+newDatePerson.cambiarPassword = "New Password: CT87654321";
+console.log(newDatePerson.password);
+
+
