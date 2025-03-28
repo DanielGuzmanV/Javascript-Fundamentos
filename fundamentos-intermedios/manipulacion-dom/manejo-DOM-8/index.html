@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Manejo del DOM</title>
+</head>
+<body>
+    <h2 class="title">Event Bubbling</h2>
+    <div id="idPadre">
+        <button id="idHijo">Haz clic aqui</button>
+    </div>
+    <hr>
+
+    <h2 class="title">Event Capturing</h2>
+    <div id="divPadre">
+        <button id="btnHijo">Haz clic aqui</button>
+    </div>
+    <hr>
+
+    <h2>Observer API (Mutacion del DOM)</h2>
+    <button id="btnCrear">Crear parrafos</button>
+    <div id="contenedor">
+        <p>Este es un parrafo de ejemplo</p>
+    </div>
+    <hr>
+
+    <h2>ClassList avanzado(toggle, replace)</h2>
+    <button id="toggleBtn">Alternar clase</button>
+    <button id="replaceBtn">Reemplazar clase</button>
+    <div id="miElemento" class="claseDiv1"></div>
+    <hr>
+
+    <h2>Storage en el navegador (LocalStorage y sessionStorage)</h2>
+    <input type="text" id="entradaValue1" placeholder="Ingrese la clave">
+    <input type="text" id="entradaValue2" placeholder="Ingrese el valor">
+    <br>
+    <button id="guardarLocal">Guardar en localStorage</button>
+    <button id="leerLocal">Leer de localStorage</button>
+    <button id="limpiarLocal">Limpiar</button>
+
+    <hr class="separador">
+    <input type="text" id="entradaValor1" placeholder="Ingrese el valor">
+    <input type="text" id="entradaValor2" placeholder="Ingrese el clave">
+    <br>
+    <button id="guardarSession">Guardar en sessionStorage</button>
+    <br>
+    <button id="leerSession">Leer de sessionStorage</button>
+    <br>
+    <button id="limpiarSession">Limpiar</button>
+
+    <!-- --------------------------------- -->
+    <script src="script.js"></script>
+</body>
+</html>
