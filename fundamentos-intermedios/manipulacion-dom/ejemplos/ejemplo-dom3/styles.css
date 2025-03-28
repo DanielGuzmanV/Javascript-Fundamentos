@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(165, 218, 180);
+    text-align: center;
+}
+
+button {
+    margin: 20px;
+}
+
+h1 {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+.subtitulo {
+    color: blue;
+}
+
+#menuList {
+    background-color: lightgray;
+    padding: 10px;
+    border: 1px solid black;
+}
