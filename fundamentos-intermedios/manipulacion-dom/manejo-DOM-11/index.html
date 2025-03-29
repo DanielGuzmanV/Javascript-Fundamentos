@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Eventos Avanzados en JavaScript</h1>
+
+    <h2>Eventos del teclado</h2>
+    <p>Evitamos que se escriban caracteres que no sean numeros </p>
+    <input type="text" id="numbers" placeholder="Escribe numeros">
+
+    <h2>Mas ejemplos:</h2>
+    <h3>Ejemplo 1: Detectar cuando se presiona enter</h3>
+    <input id="inputTexto" type="text" placeholder="Escribe y presiona enter">
+    <p id="mensaje"></p>
+
+    <h3>Deterctar cuando una tecla es soltada</h3>
+    <input type="text" id="inputKeyup" placeholder="Escribe algo...">
+    <p id="mensajeKeyup"></p>
+
+    <hr>
+
+    <h2>Eventos del Raton</h2>
+    <p>Cambiamos el color del boton cuando pasamos por el</p>
+    <button id="btnHover">Pasa el mouse aqui</button>
+    <h2>Mas ejemplos:</h2>
+    
+    <h3>Detectar un clic en un boton</h3>
+    <button id="btnClick">Haz clic aqui</button>
+
+    <h3>Detectar doble clic en un div</h3>
+    <div id="caja" style="width: 100px; height: 100px; background-color: blue;">
+    </div>
+
+    <h3>Evitar el menu contextual</h3>
+    <p id="texto">Haz clic derecho aqui</p>
+    
+    <h3>Mostrar coordenadas del mouse</h3>
+    <p id="coordenadas">Mueve el mouse aqui</p>
+    
+    <hr>
+    
+    <h2>Personalizacion de Eventos</h2>
+    <p>Evento personalizado llamado "Saludar", mostrara un mensaje por consola y alert</p>
+    <button id="btnSaludar">Disparar Eventos</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
