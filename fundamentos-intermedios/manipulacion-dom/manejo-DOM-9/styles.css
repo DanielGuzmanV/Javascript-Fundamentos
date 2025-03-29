@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+    background-color: rgb(204, 244, 248);
+}
+
+.title {
+    color: red;
+}
+
+.subtitle {
+    color: blue;
+}
+
+.container{
+    border: 2px solid black;
+    margin: 30px 50px 50px;
+}
+
+.listStyle {
+    border: 2px solid black;
+    margin: 20px auto;
+    width: 50%;
+}
+
+
