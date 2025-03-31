@@ -11,7 +11,7 @@ document.getElementById("numbers").addEventListener("keydown", function(eventos)
 // Ejemplo 1:
 document.getElementById("inputTexto").addEventListener("keydown", function(event) {
     if(event.key === "Enter") {
-        document.getElementById("mensaje").textContent = "Presinaste enter"
+        document.getElementById("mensaje").textContent = "Presionaste enter"
     }
 })
 
