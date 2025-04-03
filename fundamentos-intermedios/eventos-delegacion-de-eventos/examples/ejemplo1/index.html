@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Repaso de eventos</title>
+</head>
+<body>
+    <h1>Eventos</h1>
+    <div class="contenedor">
+        <h2>Eventos del teclado</h2>
+        <h3>Detectar si el usuario escribe un numero o una letra</h3>
+        <input type="text" id="inputText" placeholder="Escribe algo...">
+        <p id="result"></p>
+        <hr>
+
+        <h3>Bloquear la tecla "e" en un input numerico</h3>
+        <input type="text" id="inputBloquear" placeholder="Ingresar un numero">
+    </div>
+
+    <div class="contenedor">
+        <h2>Eventos del raton</h2>
+        <h3>Contador de clics con boton derecho</h3>
+        <button id="btnDerecho">Haz clic derecho</button>
+        <p id="counterClicks">Clics: 0</p>
+        <hr>
+
+        <h3>Cambiar color de fondo al pasar el mouse</h3>
+        <div id="cajaDiv"></div>
+    </div>
+
+    <div class="contenedor">
+        <h2>Eventos personalizados</h2>
+        <h3>Evento al alcanzar un numero de clics</h3>
+        <button id="btnContador">Haz clic</button>
+        <p id="mensaje"></p>
+        <hr>
+
+        <h3>Evento personalizado con datos dinamicos</h3>
+        <button id="btnEvento">Enviar evento</button>
+        <p id="eventResult"></p>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

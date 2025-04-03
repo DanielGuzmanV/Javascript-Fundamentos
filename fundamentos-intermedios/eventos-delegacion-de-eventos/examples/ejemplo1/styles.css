@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(190, 246, 172);
+    text-align: center;
+    align-items: center;
+    margin: 20px 50px 40px;
+}
+h1 {
+    color: red;
+}
+
+h2 {
+    color: blue;
+}
+hr {
+    width: 80%;
+    border: 2px solid black;
+}
+
+.contenedor {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 30px;
+}
+
+#cajaDiv {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    margin: auto;
+    text-align: center;
+}

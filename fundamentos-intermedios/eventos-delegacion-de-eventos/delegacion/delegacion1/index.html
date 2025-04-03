@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Manejo del DOM</title>
+</head>
+<body>
+    <h1>Delegacion de Eventos</h1>
+    <div class="contentDiv">
+        <h2>Un solo evento al elemento padre</h2>
+    
+        <div id="contenedor">
+            <button class="btn">Boton 1</button>
+            <button class="btn">Boton 2</button>
+        </div>
+    </div>
+
+    <div class="contentDiv">
+        <h2>Lista de tarea dinamica</h2>
+
+        <ul id="listaTareas">
+            <li>Tarea 1</li>
+            <li>Tarea 2</li>
+        </ul>
+
+        <button id="addTarea">Agregar Tareas</button>
+    </div>
+
+    <div>
+        <h2>Delegacion en formularios</h2>
+
+        <form id="miFormulario">
+            <input type="text" name="nombre" placeholder="Nombre">
+            <input type="email" name="email" placeholder="Email">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
