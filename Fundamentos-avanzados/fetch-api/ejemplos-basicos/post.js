@@ -1,24 +1,32 @@
 // Otro metodo comun en fetch es:
 // POST (Envio de datos): Si queremos enviar datos a la API podemos usar 
-// el metodo POST de la siguiente manera:
+// el metodo POST
+// Ejemplo practico con JSONPlaceholder (API simulada que recibe datos)
+// solicitud POST para enviar datos (Creacion de un nuevo usuario)
 
 fetch('https://jsonplaceholder.typicode.com/users', {
-    // Metodo HTTP
+    // Metodo HTTP para enviar datos
     method: 'POST',
+
+    // Tipo de datos que estamos enviando
     headers: {
         'Content-Type': 'application/json'
     }, 
     body: JSON.stringify({
         name: 'Marco',
-        email: 'Marco@example.com'
+        email: 'Marco@example.com',
+        username: 'Marco123'
     })
 })
     // Convertimos la respuesta en JSON
     .then(response => response.json())
+
     .then(data => {
+        // Muestra la respuesta del servidor
         console.log('Usuario creado:', data);
     })
     .catch(error => {
+        // Maneja cualquier error
         console.log('Error:', error);
     });
 

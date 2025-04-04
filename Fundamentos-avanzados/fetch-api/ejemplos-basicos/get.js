@@ -1,7 +1,9 @@
-// Ejemplo basico de consumo de una API con fetch:
-// Imaginemos que tenemos una API que devuelve informacion 
-// sobre usuarios como esta:
-// Solicitud GET usando Fetch API:
+// Ejemplo basico de consumo de datos (GET request)
+// Objetivo: Realizar una solicitud para obtener datos de una API publica
+// Ejemplo practico con "JSONPlaceholder" API publica para realizar pruebas
+// proporciona datos de prueba como usuarios, publicaciones, etc
+
+// Solicitud GET usando Fetch API para obtener usuarios:
 fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => {
         // Verificamos si la respuesta es exitosa (status 200)
@@ -22,8 +24,9 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
 // En este ejemplo:
 // * fetch(): realiza una solicitud GEt a la URL proporcionada
+// * response.json(): convierte la respuesta en JSON para que podamos trabajar con los datos
 // * then(): Se usa para manejar las respuestas exitosas. La ruespuesta debe ser
-// en formato JSON para poder trabajar con ella
+//  en formato JSON para poder trabajar con ella
 // * catch(): Se usa para capturar cualquier error durante el proceso de solicitud
 
 
