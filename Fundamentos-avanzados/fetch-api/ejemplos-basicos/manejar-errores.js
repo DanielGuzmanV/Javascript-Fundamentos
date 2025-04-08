@@ -3,61 +3,73 @@
 // los errores correctamente en cada paso
 
 // Realizamos la solicitud POST
-async function solicitudHttpUser(email, password) {
+async function hacerPeticion(method, paramUrl, paramData = null, paramHeadersExtra = {}) {
     try {
-        const response = await fetch('https://reqres.in/api/login', {
-            method: "POST",
+        const options = {
+            method,
             headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                email: email,
-                password: password,
-            }),
-        });
+                'Content-Type': 'application/json',
+                ... paramHeadersExtra
+            }
+        };
+
+        if(paramData) {
+            options.body = JSON.stringify(paramData);
+        }
+
+        const response = await fetch(paramUrl, options);
 
         // Verificar si la respuesta fue exitosa:
-        if(!response.ok)  {
+        if(!response.ok) {
             if(response.status === 400) {
                 throw new Error('Datos invalidos. Por favor, verifica tu correo y contraseña');
             } else if(response.status === 404) {
-                throw new Error('La pagina no se encontro');
+                throw new Error('Recurso no encontrado');
             } else if(response.status === 500) {
                 throw new Error('Error interno del servidor. Intenta nuevamente mas tarde');
+                
             } else {
                 throw new Error(`Error desconocido: ${response.status}`);
             }
-        }   
+        }
 
         // convertimos la respuesta en formato JSON
-        const data = await response.json();
+        const jsonData = await response.json();
+        return jsonData;
 
-        // Verificamos si el token esta presente:
-        if(data.token) {
-            console.log('Login exitoso, token:', data.token);
-        } else {
-            throw new Error('No se recibio un token');
+    } catch (error) {
+        console.error('Error en realizar la peticion:', error);
+        // Si queremos propagar el error:
+        throw error;
+    }
+}
+
+// =======================================================
+
+// Usamos la estructura que realizamos:
+async function loginUser(email, password) {
+    try {
+        
+        const dataUser = await hacerPeticion("POST", "https://reqres.in/api/login", {
+            email, password
+        });
+
+        if(dataUser.token) {
+            console.log('Token recibido:', dataUser.token);
+        } else{
+            console.log('No se recibio un token');
         }
 
     } catch (error) {
-        console.log("Error:", error.message);
+        console.error('Error:', error);
     }
 }
 
-// =================================================================
-// =================================================================
+loginUser("eve.holt@reqres.in", "cityslicka");
 
-// Realizamos la funcion para verificar el email y contraseña
-function loginUser(email, password) {
-    if(!email || !password) {
-        console.log('El correo y la contraseña son requeridos');
-        return;
-    }
-    solicitudHttpUser(email, password);
-}
 
-// Llamamos a la funcion:
-loginUser('eve.holt@reqres.in', 'cityslicka');
+
+
 
 
 

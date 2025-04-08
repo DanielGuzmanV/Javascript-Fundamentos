@@ -50,7 +50,3 @@ function obtenerUserToken(token) {
         })
         .catch(error => console.error('Error al obtener usarios:', error));
 }
-
-// En este codigo vemos los que tienen tokens, pero es posible personalizar 
-// para saber solo los que tienen apellido, nombre, etc?
-
