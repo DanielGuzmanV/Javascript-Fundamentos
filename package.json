@@ -1,0 +1,17 @@
+{
+  "name": "003hola-mundo",
+  "version": "1.0.0",
+  "description": "Este es mi primer proyecto con javascript",
+  "type": "commonjs",
+  "main": "002index.js",
+  "scripts": {
+    "start": "node 002index.js",
+    "saludar": "node 003hola-mundo.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "HolaQueManbo"
+  ],
+  "author": "DLGuzmanBuho",
+  "license": "ISC"
+}
