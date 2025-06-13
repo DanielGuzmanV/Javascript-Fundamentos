@@ -25,10 +25,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Creamos un nuevo elemento "li" para la tarea:
     const liTarea = document.createElement('li');
+    liTarea.className="bg-gray-200 rounded-md rounded hover:bg-gray-300 transition"
 
     // Creamos el contenedor interno:
     const contenedor = document.createElement('div');
-    contenedor.classList.add('item-contenido');
+    contenedor.className="flex justify-between items-center gap-3 p-2 border-b";
 
     // Creamos el span para el texto:
     const span = document.createElement('span');
@@ -37,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Creamos el boton para eliminar la tarea:
     const btnEliminar = document.createElement('button');
     btnEliminar.textContent = 'Eliminar';
-    btnEliminar.classList.add('eliminar');
+    btnEliminar.className="bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700 transition";
 
     btnEliminar.addEventListener('click', () => {
       listaTareas.removeChild(liTarea);
