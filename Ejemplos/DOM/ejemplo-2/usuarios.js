@@ -28,6 +28,11 @@ export class Admins extends Usuarios {
     return this.permisos.includes(permiso);
   }
 
+  mostrarInformacionAdmin() {
+    const roles = this.permisos.length > 0 ? this.permisos.join(", ") : "Sin roles";
+    return `${this.nombre} - ${this.email} | Roles: ${roles}`;
+  }
+
 }
 
 

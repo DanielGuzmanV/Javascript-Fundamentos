@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../dist/output.css" rel="stylesheet"/>
-  <title>Sistem Users</title>
+  <title>SistemUsers</title>
 </head>
 <body class="bg-gray-100 p-6">
   <div class="max-w-xl mx-auto bg-white p-4 rounded shadow space-y-5">
-    <h1 class="text-2xl font-bold text-center">Gestion de Usuarios</h1>
+    <h1 class="text-4xl font-bold text-center">Gestion de Usuarios</h1>
   
     <form id="formUsuario" class="space-y-5">
     
-      <input id="nombre" type="text" placeholder="Ingrese el nombre" class="w-full p-2 border rounded"/>
-      <input id="email" type="email" placeholder="Ingrese el email" class="w-full p-2 border rounded"/>
+      <input id="nombre" type="text" placeholder="Ingrese el nombre" class="w-full p-2 border rounded" required/>
+      <input id="email" type="email" placeholder="Ingrese el email" class="w-full p-2 border rounded" required/>
       
       <select id="selectTipo" class="w-full p-2 border rounded">
         <option value="usuario">Usuario</option>
@@ -21,17 +21,27 @@
       </select>
   
       <input id="permisos" type="text" placeholder="Permisos separados por, (Solo para admins)" class="w-full p-2 border rounded"/>
-      <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Agregar</button>
+      <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-700 transition-colors duration-300">Agregar</button>
   
     </form>
 
     <div id="error" class="text-red-500 text-sm"></div>
 
-    <h2 class="text-xl font-semibol">Usuarios</h2>
-    <ul id="listUsuarios" class="space-y-1 list-disc list-inside text-sm"></ul>
+    <h2 class="text-1xl font-bold mt-4">Usuarios</h2>
+    <ul id="listUsuarios" class="space-y-3 list-disc list-inside text-sm"></ul>
+    
+    <h2 class="text-1xl font-bold mt-4">Administradores</h2>
+    <ul id="listAdmins" class="space-y-3 list-disc list-inside text-sm"></ul>
 
-    <h2 class="text-xl font-semibol mt-4">Admins con permiso de escritura</h2>
-    <ul id="adminEscritura" class="space-y-1 list-disc list-inside text-sm"></ul>
+    <h2 class="text-1xl font-bold mt-4">Admins con permisos</h2>
+    <select id="selectRol" class="w-full p-2 border rounded">
+      <option value="ninguno">Ninguno</option>
+      <option value="todos">Todos</option>
+      <option value="lectura">Lectura</option>
+      <option value="escritura">Escritura</option>
+      <option value="borrar">Borrar</option>
+    </select>
+    <ul id="listAdminRoles" class="space-y-3 list-disc list-inside text-sm"></ul>
 
   </div>
 
