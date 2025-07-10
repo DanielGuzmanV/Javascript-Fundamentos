@@ -25,7 +25,8 @@ export class Admins extends Usuarios {
   }
 
   tienePermiso(permiso) {
-    return this.permisos.includes(permiso);
+    const permisoNormalizado = permiso.toLowerCase();
+    return this.permisos.some(valPermiso => valPermiso.toLowerCase() === permisoNormalizado);
   }
 
   mostrarInformacionAdmin() {

@@ -108,24 +108,28 @@ function renderAdminRol(valueRol) {
 
 // Funcion para mostrar los admins con roles:
 function toggleRolesList() {
-  if($selectValueRol.value === 'ninguno'){
+
+  // Normalizamos el texto de entrada
+  const inputValue = $selectValueRol.value.toLowerCase();
+
+  if(inputValue === 'ninguno'){
     $listAdminRoles.style.display = 'none';
 
-  } else if($selectValueRol.value === 'todos'){
+  } else if(inputValue === 'todos'){
     $listAdminRoles.style.display = 'block';
-    renderAdminRol($selectValueRol.value);
+    renderAdminRol(inputValue);
 
-  } else if($selectValueRol.value === 'lectura'){
+  } else if(inputValue === 'lectura'){
     $listAdminRoles.style.display = 'block';
-    renderAdminRol($selectValueRol.value);
+    renderAdminRol(inputValue);
 
-  } else if($selectValueRol.value === 'escritura'){
+  } else if(inputValue === 'escritura'){
     $listAdminRoles.style.display = 'block';
-    renderAdminRol($selectValueRol.value);
+    renderAdminRol(inputValue);
 
-  } else if($selectValueRol.value === 'borrar'){
+  } else if(inputValue === 'borrar'){
     $listAdminRoles.style.display = 'block';
-    renderAdminRol($selectValueRol.value);
+    renderAdminRol(inputValue);
   } 
 }
 
