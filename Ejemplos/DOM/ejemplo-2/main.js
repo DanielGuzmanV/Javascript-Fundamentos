@@ -111,25 +111,15 @@ function toggleRolesList() {
 
   // Normalizamos el texto de entrada
   const inputValue = $selectValueRol.value.toLowerCase();
+  const valueRolesAdmin = ['todos', 'lectura', 'escritura', 'borrar'];
 
   if(inputValue === 'ninguno'){
     $listAdminRoles.style.display = 'none';
 
-  } else if(inputValue === 'todos'){
+  } else if(valueRolesAdmin.includes(inputValue)){
     $listAdminRoles.style.display = 'block';
     renderAdminRol(inputValue);
 
-  } else if(inputValue === 'lectura'){
-    $listAdminRoles.style.display = 'block';
-    renderAdminRol(inputValue);
-
-  } else if(inputValue === 'escritura'){
-    $listAdminRoles.style.display = 'block';
-    renderAdminRol(inputValue);
-
-  } else if(inputValue === 'borrar'){
-    $listAdminRoles.style.display = 'block';
-    renderAdminRol(inputValue);
   } 
 }
 
