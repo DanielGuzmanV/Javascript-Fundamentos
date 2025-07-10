@@ -17,11 +17,16 @@ const $selectValueRol = document.getElementById("selectRol");
 $form.addEventListener('submit', event => {
   event.preventDefault();
   $error.textContent = "";
+  const permisosValidos = ['lectura', 'escritura', 'borrar'];
+
   try {
     const nombre = $nombre.value.trim();
     const email = $email.value.trim();
     const valuetipo = $selectValue.value;
-    const valuePermisos = $inputPermisos.value.split(",").map(p => p.trim()).filter(p => p);
+    const valuePermisos = $inputPermisos.value
+      .split(",")
+      .map(p => p.trim().toLowerCase())
+      .filter(p => permisosValidos.includes(p));
 
     let nuevoUsuario;
     if(valuetipo === "admin") {
